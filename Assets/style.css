@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: "Roboto", sans-serif;
 }
@@ -71,4 +75,17 @@ section{
         width: 100%;
         font-size: 14px;
     }
+}
+
+footer{
+    margin-top:200px;
+    padding-bottom: 20px;
+}
+
+.footer-link {
+    opacity: 75%;
+}
+
+.footer-link:hover {
+    opacity:100%
 }

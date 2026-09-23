@@ -25,9 +25,9 @@
     <!-- NavBar -->
     <nav class="animate__animated animate__fadeInDown navbar navbar-expand-lg bg-primary-subtle py-4">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+            <p class="navbar-brand d-flex align-items-center gap-2">
                 <span class="fw-bold text-primary-emphasis ">E-report</span>
-            </a>
+            </p>
             <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"        
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -35,19 +35,19 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto gap-3 text-center pt-4 pt-lg-0">
                     <li class="nav-item ">
-                        <a class="nav-link text-primary-emphasis" href="#">Home</a>
+                        <a class="nav-link text-primary-emphasis" href="#hero">Home</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link text-primary" href="#">About</a>
+                        <a class="nav-link text-primary" href="#about">About</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link text-primary" href="#">Services</a>
+                        <a class="nav-link text-primary" href="#service">Services</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link text-primary" href="#">Recent</a>
+                        <a class="nav-link text-primary" href="#recent">Recent</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link text-primary" href="#">FAQ</a>
+                        <a class="nav-link text-primary" href="#faq">FAQ</a>
                     </li>
                 </ul>
             </div>
@@ -121,9 +121,10 @@
         <div class="container">
             <div class="text-end mb-5">
                 <h1 data-aos="fade-up" data-aos-duration="1000" class="text-primary fw-bold">Recent Reports</h1>
-                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, ducimus!</p>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="lh-lg">Take a look at some of the latest reports received and currently being handled by the E-Report IDN team.
+</p>
             </div>
-            <div class="row">
+            <div class="row mb-5">
                 <div class="col-12 col-md-6 col-lg-4 mb-4">
                     <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" class="card">
                         <p style="background-color: rgba(0, 0, 0, .6);" class="position-absolute text-light px-3 py-2 rounded">Academic</p>
@@ -162,10 +163,13 @@
                 </div>
             </div>
         </div>
+        <a data-aos="fade-right" class="text-center d-block link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">
+            See More <i class="fa-solid fa-arrow-right"></i>
+        </a>
     </section>
 
     <!-- Faq -->
-    <section>
+    <section id="faq">
         <div class="container">
             <div class="row">
                 <h1 data-aos="fade-up" data-aos-duration="1000" class="text-primary fw-bold">FAQ</h1>
@@ -261,10 +265,46 @@
     </section>
 
     <!-- footer -->
-    <footer class="bg-primary-subtle py-5 mt-5">
-        <div class="container text-center">
-            <p class="mb-0 text-primary-emphasis">© 2026 E-report. All rights reserved. Lalu Muhammad Raisalby Aliandra</p>
+    <footer class="bg-primary py-5 mt-5">
+        <div class="container">
+            <div class="row gap-3 justify-content-between row-gap-5 row-gap-md-0">
+                <div class="col-md-4 text-white">
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                        <img src="./Assets/image/Al-logo.png" alt="" width="30px">
+                        <h3 class="fw-bold m-0">E-report</h3>
+                    </div>
+                    <p class="opacity-75 lh-lg m-0">E-Report IDN is a digital reporting platform designed to help students and the entire school community submit reports, complaints, and feedback regarding various issues within the school environment. Through this platform, complaints can be submitted more easily and in a structured manner, and the follow-up process can be monitored.</p>
+                </div>
+                <div class="col-md-2 text-white d-flex flex-column gap-2">
+                    <h4 class="fw-bold">Menu</h4>
+                    <a class="text-white text-decoration-none footer-link " href="#hero">Home</a>
+                    <a class="text-white text-decoration-none footer-link " href="#about">About</a>
+                    <a class="text-white text-decoration-none footer-link " href="#service">Services</a>
+                    <a class="text-white text-decoration-none footer-link " href="#recent">Recent</a>
+                    <a class="text-white text-decoration-none footer-link " href="#faq">FAQ</a>
+                </div>
+                <div class="col-md-4 d-flex flex-column gap-3">
+                    <h4 class="fw-bold text-white">Contact Us</h4>
+                    <a class="text-white text-decoration-none d-flex align-items-center gap-2" href="mailto:lalualby11@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                        lalualby11@gmail.com
+                    </a>
+                    <a class="text-white text-decoration-none d-flex align-items-center gap-2" href="https://wa.me/6285385457740" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        +62 853-8545-7740
+                    </a>
+                    <a class="text-white text-decoration-none d-flex align-items-center gap-2" href="">
+                        <i class="fa-solid fa-location-pin"></i>
+                        Gg. Al-jauhari, kalisari. Jakarta Timur
+                    </a>
+                </div>
+            </div>
+
+            <div class="copyright text-center text-white mt-3">
+                &copy; Copyright by <span class="fw-bold ">Lalu Muhammad Raisalby Aliandra</span> 2026, All Right Reserved. 
+            </div>
         </div>
+        
     </footer>
 
     <!-- JS: bootstrap -->
