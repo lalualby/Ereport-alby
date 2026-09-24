@@ -59,18 +59,23 @@
     <section id="report">
         <div class="container">
             <!-- header -->
-            <div class="text-center">
-                <h1 class="fw-bold text-primary-emphasis">All Report</h1>
-                <p class="text-muted lh-lg ">Use the search feature to quickly find reports that have been created. Enter the report ID, report title, or keywords related to the complaint you wish to find.</p>
+            <div class="d-flex flex-column flex-lg-row align-items-center justify-content-lg-between justify-content">
+                <div class="col-lg-8 text-center text-lg-start">
+                    <h1 class="fw-bold text-primary-emphasis">All Report</h1>
+                    <p class="text-muted lh-lg ">Use the search feature to quickly find reports that have been created. Enter the report ID, report title, or keywords related to the complaint you wish to find.</p>   
+                </div>
+                <div class="col-lg-2">
+                    <button class="btn btn-primary w-100 " type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"> <i class="fa-solid fa-plus"></i> Report</button>
+                </div>
             </div>
             
             
             <!-- filter&search -->
-             <div class="row mt-5">
-                <div class="col-4">
+             <div class="row mt-5 gap-3 gap-md-0">
+                <div class="col-md-4">
                     <input type="text" class="form-control shadow-sm" placeholder="Search Report">
                 </div>
-                <div class="col-3">
+                <div class="col">
                     <select class="form-select">
                         <option value="">Choose</option>
                         <option value="">Academic</option>
@@ -78,15 +83,15 @@
                         <option value="">Anonymous</option>                       
                     </select>
                 </div>
-                <div class="col-3">
+                <div class="col">
                     <select class="form-select">
                         <option value="">Sort</option>
                         <option value="">Lastest</option>
                         <option value="">Oldest</option>                       
                     </select>
                 </div>
-                <div class="col-2">
-                    <button class="btn btn-primary">
+                <div class="col-lg-2">
+                    <button class="btn btn-primary w-100">
                         <i class="fa-solid fa-filter"></i>
                         Filter
                     </button>
@@ -165,6 +170,49 @@
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p>
                             <a href="Anonymous-report.html" class="btn btn-primary">Read More</a>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header bg-primary text-white">
+                            <h1 class="modal-title fs-5 fw-semibold" id="exampleModalLabel"> <i class="fa-solid fa-pen"></i> Report!!</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <form action="https://formspree.io/f/xwlpbjoq" method="post">
+                            <div class="modal-body p-4">
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold">Name</label>
+                                    <Input class="form-control shadow-sm mb-3" type="text" name="nama" id="nama" placeholder="Input Your Name"></Input>
+                                    <label class="form-label fw-bold">Report Title</label>
+                                    <Input class="form-control shadow-sm" type="text" name="report title" id="report title" placeholder="Your Report Title"></Input>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold">Category</label>
+                                    <select name="report-type" id="report-type" class="form-select">
+                                        <option>Choose</option>
+                                        <option value="Academic">Academic</option>
+                                        <option value="Facility">Facility</option>
+                                        <option value="Anonymous">Anonymous</option>
+                                    </select>
+                                </div>
+                                <div class=" mb-3">
+                                    <label class="form-label fw-bold">Report Description</label>
+                                    <textarea rows="6" class="form-control" name="report" id="report" placeholder="Input Your Report"></textarea>
+                                </div>
+                                <div class=" mb-3">
+                                    <label class="form-label fw-bold">Choose Image</label>
+                                    <input type="file" class="form-control" name="image" id="image" accept="image/*">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="send" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="close" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
