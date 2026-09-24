@@ -89,3 +89,14 @@ footer{
 .footer-link:hover {
     opacity:100%
 }
+
+/* report */
+.img-report{
+    height: 400px; overflow: hidden;
+}
+
+@media (max-width: 992px) {
+    .img-report{
+        height: 250px;
+    }
+}
